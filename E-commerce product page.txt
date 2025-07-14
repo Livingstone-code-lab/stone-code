@@ -1,0 +1,217 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce product page</title>
+    <link rel="stylesheet" href="./styles.css">
+  <body>
+    <header>
+      <h1>SolarTech Mart</h1>
+      <p>Explore the future of smart living — one product at a time.</p>
+      <nav id="home"><a href="#home">Home</a></nav>
+      <nav id="categories"><a href="#categories">Categories</a></nav>
+       <nav id="product"><a href="#product">Product</a></nav>
+      <nav id="cart"><a href="#cart">Cart</a></nav>
+      <nav id="contact-us"><a href="#contact-us">Contact Us</a></nav>
+      <input type="text" id="searchbox" placeholder="Search-smart-gadgets, accessories, tools">
+    </header>
+    <main>
+      <section>
+        <h2>Shop Our Best-Selling Smart Products</h2>
+        <form>
+          <fieldset>
+            <legend>Category</legend>
+            <label for="smart-home-device-label">Smart Home Devices</label>
+            <input type="checkbox" id="smart-home-device-label" name="smart-home-device-label" value="smart-home-device-label">
+            <label for="wearable-tech">Wearable Tech</label>
+            <input type="checkbox" id="wearable-tech" name="wearable-tech" value="wearable-tech">
+            <label for="health-&-wellness">Health & Wellness</label>
+            <input type="checkbox" id="health-&-wellness" name="health-&-wellness" value="health-&-wellness">
+            <label for="portable-electronics">Portable Electronics</label>
+            <input type="checkbox" id="portable-electronics" name="portable-electronics" value="portable-electronics">
+          </fieldset>
+          <fieldset>
+            <legend>Price Range</legend>
+            <label for="under-$50">Under $50</label>
+            <input type="checkbox" id="under-$50" name="under-$50" value="under $50">
+            <label for="$50–$100">$50–$100</label>
+            <input type="checkbox" id="$50–$100" name="$50–$100" value="$50–$100">
+            <label for="$100–$200">$100–$200</label>
+            <input type="checkbox" id="$100–$200" name="$100–$200" value="$100–$200">
+            <label for="above-$200">Above-$200</label>
+            <input type="checkbox" id="above-$200" name="above $200" value="above $200">
+          </fieldset> 
+          <fieldset>
+            <legend>Brand</legend>
+            <label for="galaxycore">GalaxyCore</label>
+            <input type="checkbox" id="galaxycore" name="galaxycore" value="galaxycore">
+            <label for="lumina">Lumina</label>
+            <input type="checkbox" id="lumina" name="lumina" value="lumina">
+            <label for="pulsex">PulseX</label>
+            <input type="checkbox" id="pulsex" name="pulsex" value="pulsex">
+            <label for="zentech">ZenTech</label>
+            <input type="checkbox" id="zentech" name="zentech" value="zentech">
+          </fieldset>
+        </form> 
+        <p>
+          <strong>Customer Rating:</strong>
+          <span aria-hidden="true">⭐⭐⭐⭐⭐</span>
+        </p> 
+        <button type="submit" id="apply-filter">Apply Filters</button>
+      </section>
+      <section>
+        <div>
+          <h2>Product 1: Lumina Smart Lamp V3</h2>
+          <table>
+              <thead>
+                <tr>
+                   <th>Price</th>
+                   <th>Description</th>  
+                </tr>  
+              </thead>
+              <tbody>
+                <tr>
+                  <td>$89.99</td>
+                  <td>A voice-activated lamp with customizable lighting modes, built-in Bluetooth speaker, and ambient motion detection. Perfect for bedrooms or remote workspaces.</td>
+                </tr>
+              </tbody>    
+          </table>
+          <h3>Key Features:</h3>
+          <p><ul>
+              <li>Color-shifting light</li>
+              <li>Auto-sleep timer</li>
+              <li>Smart assistant compatible</li>  
+            </ul></p>  
+        <button type="submit" id="add-to-cart-1">Add to Cart</button>
+        </div> 
+        <div>
+          <h2>Product 2: PulseX Tracker Band 2.0</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Price</th>
+                <th>Description</th>
+              </tr>  
+            </thead>
+            <tbody>
+              <tr>
+                <td>$129.00</td>
+                <td>Track your steps, heart rate, and sleep with this lightweight fitness band. Designed for long battery life and real-time health monitoring.</td>
+              </tr>
+            </tbody>  
+          </table> 
+          <h3>Key Features:</h3>
+          <p><ul>
+              <li>7-day battery life</li>
+              <li>Waterproof</li>
+              <li>Syncs with mobile app</li>
+            </ul></p> 
+          <button type="submit" id="add-to-cart-2">Add to Cart</button>
+        </div> 
+        <div>
+          <h2>Product 3: ZenTech Travel Charger Pro</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Price</th>
+                <th>Description</th>
+              </tr>  
+            </thead>
+            <tbody>
+              <tr>
+                <td>$49.50</td>
+                <td>Charge up to 5 devices simultaneously with this compact, fast-charging station. Ideal for digital nomads and tech-savvy households.</td>
+              </tr>  
+            </tbody>  
+          </table>
+          <h3>Key Features:</h3>
+          <p><ul>
+              <li>USB-A & USB-C ports</li>
+              <li>Surge protection</li>
+              <li>Compact foldable design</li>
+            </ul></p>
+          <button type="submit" id="add-to-cart-3">Add to Cart</button>
+        </div>  
+      </section>
+      <section>
+        <h2>Your Cart</h2>
+        <p>Items Preview</p>
+        <ul>
+          <li>PulseX Tracker Band 2.0 — $129.00
+            Quantity: 1</li>
+          <li>ZenTech Travel Charger Pro — $49.50
+            Quantity: 1</li>
+        </ul> 
+        <h3>Subtotal</h3>
+        <p>$178.50</p>
+        <button type="submit" id="proceed-to-checkout">Proceed to Checkout</button>
+      </section>
+      <section>
+        <h2>Contact Us</h2>
+        <address>
+        <p><a href="+1(800)555-TECH">Tel:+1(800)555TECH</a></p>
+        <p><a href="support@solartechmart.com">mailto:support@solartechmart.com</a></p>
+        <p>Live Chat: Available 9 AM – 6 PM (Mon–Fri)</p>
+        <p>Office Address:
+SolarTech Mart HQ
+1024 Innovation Drive,
+          Silicon Valley, CA 94043, USA</p>
+        </address>
+      </section>
+      <section>
+        <footer>
+          <div>
+          <h2>Quick Access</h2>
+          <ul>
+            <li>
+              <h3>About Us</h3>
+              <p>Learn about SolarTech Mart’s mission, our team, and how we’re making smart living accessible to everyone.</p>
+            </li>
+            <li>
+              <h3>FAQs</h3>
+              <p>Got questions? Find answers to the most commonly asked questions about orders, shipping, and our products.</p>
+            </li>
+            <li>
+              <h3>Returns & Refunds</h3>
+              <p>Understand our return policy, how to initiate a return, and when to expect your refund.</p>
+            </li> 
+            <li>
+              <h3>Careers</h3>
+              <p> Explore open positions and become part of a fast-growing, innovation-driven team.</p>
+            </li>
+            <li>
+              <h3>Privacy Policy</h3>
+              <p>How we collect, use, and protect your personal data.</p>
+            </li>
+            <li>
+              <h3>Terms & Conditions</h3>
+              <p>Our legal terms for using the website and making purchases.</p>
+            </li>  
+          </ul>
+          </div>
+          <div>
+            <h2>Newsletter Subscription</h2>
+            <p>Subscribe to our monthly newsletter to receive updates on the latest smart gadgets, exclusive discounts, and early access to new product launches.</p>
+            <form>
+              <fieldset>
+                <label for="email-label">Email:(required)</label>
+                <input type="email" id="email-label" name="email" placeholder="Enter Your Email Here" required>
+              </fieldset>
+              <button type="submit" id="subscribe-now">Subscribe Now</button>
+            </form>
+            <h3>Disclaimer</h3>
+            <p>We respect your privacy. You can unsubscribe at any time.</p>
+          </div>
+          <div>
+            <h2>Connect With Us Online</h2>
+            <p>Join our community and stay inspired. Follow us for tech tips, product videos, behind-the-scenes content, and more.</p>
+            <p>Facebook:<a href="facebook.com/solartechmart">facebook.com/solartechmart</a></p>
+            <p>Instagram:<a href="instagram.com/solartechmart">instagram.com/solartechmart</a></p>
+            <p>Twitter/X:<a href="twitter.com/solartechmart">twitter.com/solartechmart</a></p>
+            <p>YouTube:<a href="youtube.com/@solartechmart">youtube.com/@solartechmart</a></p>
+          </div>  
+        </footer>  
+      </section>  
+    </main>  
+  </body>
+</html>
